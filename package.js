@@ -1,6 +1,6 @@
 Package.describe({
   name: 'flynn:utils',
-  version: '0.0.6',
+  version: '0.0.7',
   // Brief, one-line summary of the package.
   summary: 'private use utils',
   // URL to the Git repository containing the source code for this package.
@@ -18,7 +18,7 @@ Package.onUse(function(api) {
   api.export('ROLES');
   api.export('ERRORS');
 
-  api.use('stevezhu:lodash@4.0.0');
+  api.use('stevezhu:lodash@3.10.1');
   api.use('http', 'server');
   api.use('alanning:roles@1.2.14', ['client', 'server']);
   api.imply('alanning:roles', ['client', 'server']);
